@@ -9,7 +9,7 @@ from sklearn.neighbors import KNeighborsRegressor
 from sklearn.svm import SVR
 from sklearn.metrics import r2_score
 
-file_path = 'Fuel_cell_performance_data-Full.csv'
+file_path = 'Fuel_cell_performance.csv'
 dataset = pd.read_csv(file_path)
 
 dataset.head(), dataset.columns

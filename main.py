@@ -71,10 +71,10 @@ best_pred = best_model.predict(X_test)
 residuals = y_test - best_pred
 
 plt.figure(figsize=(10, 6))
-sns.histplot(residuals, kde=True, color='yellow', bins=30)
+sns.histplot(residuals, kde=True, color='blue', bins=30)
 plt.title(f"Residuals Distribution for {best_model_name}")
 plt.xlabel("Residuals")
 plt.ylabel("Frequency")
-plt.axvline(0, color='blue', linestyle='--', label='Zero Residual')
+plt.axvline(0, color='red', linestyle='--', label='Zero Residual')
 plt.legend()
 plt.show()

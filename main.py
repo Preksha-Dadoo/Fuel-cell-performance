@@ -14,7 +14,7 @@ dataset = pd.read_csv(file_path)
 
 dataset.head(), dataset.columns
 
-X = dataset.drop(['Target1', 'Target2', 'Target3', 'Target4', 'Target5'], axis=1)
+X = dataset.drop(['A', 'B', 'C', 'D', 'E'], axis=1)
 y = dataset['Target5']
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
